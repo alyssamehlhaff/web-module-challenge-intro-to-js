@@ -19,6 +19,12 @@ Do the following:
 
    HINT: no function required
 */
+const votingAge = 24
+if (votingAge >= 18){
+  console.log('true')
+} else if (votingAge < 18){
+  console.log('fasle')
+}
 
 
 
@@ -34,6 +40,10 @@ Do the following:
    HINT: no function required
 */
 
+var firstThing = 10
+var secondThing = 14
+if (firstThing === 10)
+console.log ('true')
 
 
 
@@ -49,7 +59,8 @@ Do the following:
    HINT: look up the Number method
 */
 
-
+var year = 1999
+int valueOf (year) = 1999
 
 
 /*
@@ -64,6 +75,9 @@ Do the following:
 function multiply(num1, num2){
   return num1 * num2;
 }
+multiply(2,3)
+
+
 
 
 
@@ -77,9 +91,12 @@ Do the following:
  3. Return the newly calculated age
 */
 
-function dogYears(/*add your code here*/){
-  /*add your code here*/
+function dogYears(dogYears){
+  var years = 7 * age;
+  var age = 24
+  console.log(dogYears)
 }
+
 
 
 
@@ -128,9 +145,10 @@ NOTE 2: This is a great time to check the tests to see what it expects, versus w
         Notice the expected and received, expected is what the test is looking for, and received is what was actually returned from this function. You can also see it's passing in two values, the number 4 and the number 1. 
         So, on this one test, the weight would be 4 pounds, and the age would be 1 years old. It's expecting your function to return a decimal number of 0.2
 */  
+const weight1 = 15
 
-function hungryDog(/*add your code here*/){
-  /*add your code here*/
+function hungryDog(food)){
+  console.log('weight * 3%')
 }
 
 
@@ -157,8 +175,18 @@ RULES OF THE GAME: Scissors beats Paper | Paper beats Rock | Rock beats Scissors
 */
 
 function game(user, computer){
-  /*add your code here*/
+ var rpc = Math.random()
+ if (rpc <= .33){
+  console.log("rock");
+ }
+ else if (rpc >= .66){
+  console.log("paper");
+ }
+ else{
+  console.log("scissors");
+ }
 }
+
 
 
 
@@ -173,10 +201,11 @@ Using the miles function below do the following:
 3. Return the number of miles
 */
 
-function miles(/*add your code here*/){
-  /*add your code here*/
+function miles(kilometers, 1.609){
+  console.log(kilometers / 1.609)
 }
-
+var kilometers = 5
+feet ()
 
 
 //Task 5b - Centimeters to Feet
@@ -187,10 +216,11 @@ Using the feet function below do the following:
 3. Return number of feet
 */
 
-function feet(/*add your code here*/){
-  /*add your code here*/
+function feet(Centimeters, feet){
+  console.log(centimeters / 30.48)
 }
-
+var centeimeters = 3
+feet()
 
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 6 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
@@ -207,10 +237,19 @@ Using the annoyingSong function below do the following:
 4. Each time the annoyingSong is run from this loop, it should console.log the string that was returned. 
 */
 
-function annoyingSong(/*add your code here*/){
-      /*add your code here*/
+function annoyingSong(){
+  let word = "bottles";
+let count = 99;
+while (count > 0){
+  console.log(count + " " + word + "of soda on the wall");
+  console.log(count + " " + word + "of soda,");
+  cound = count - 1;
+  if (count > 0) {
+    console.log(count + " " + word + "of beer on the wall.");
+  }
 }
-
+  
+  
 
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 7 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀*/
 
@@ -227,10 +266,24 @@ Using the grade function below do the following:
  below should return 'you got an F'
 */
 
-function grade(/*Your Code here */){
-/*Your Code here */
+function grade(score){
+if(score === 100 || score >= 90){
+  console.log('you got an A');
+}
+else if(score >= 80 && score <= 89){
+  console.log('you got a B')
+}
+else if(score >= 70 && score<= 79){
+  console.log('you got a C')
+}
+else if(score >= 60 && score <= 69){
+  console.log('you got a D')
+}
+else {
+  console.log('you got an F')
 }
 
+console.log(grade(75));
 
 
 /*💪💪💪💪💪💪💪💪💪💪 Stretch 💪💪💪💪💪💪💪💪💪💪*/
@@ -246,8 +299,15 @@ HINT - try looking up the .includes() method
 */
 
 
-function vowelCounter(/*add your code here*/) {
-  /*add your code here*/
+function vowelCounter(str) {
+  var vowelsCount = 0
+  var stirng = str.toStirng();
+  for (var i = 0; i <= String.length - 1; i++) {
+    if (String.charAt(i)== "a" || stirng.charAt(i) == "e" || stirng.charAt(i) == "i" || string.charAt(i) == "o" || string.charAt(i) == "u") {
+      vowelsCount += 1;
+    }
+  }
+  return vowelsCount;
 }
 
 
